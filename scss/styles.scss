@@ -18,3 +18,91 @@ $font-family: 'Poppins', sans-serif;
 
 // Typography Size
 $body-size: 0.938rem;
+$h1-size-24-36: clamp(1.5rem, 1.2391rem + 1.3043vw, 2.25rem);
+
+//Mixins
+@mixin border-top($color) {
+    border-top: 4px solid $color;
+}
+
+
+
+* {
+    outline: 1px solid red;
+}
+
+*:nth-child(even) {
+    outline: 1px solid green;
+}
+
+body {
+    font-family: $font-family;
+    margin: 0;
+    font-size: $body-size;
+    color: $neutral-dark-blue;
+    padding: 1.75rem;
+    color: $neutral-grayish-blue;
+    min-height: 100svh;
+}
+
+.header.weight-normal {
+    font-weight: 200;
+}
+
+.header {
+    color: $neutral-dark-blue;
+}
+
+.header.big {
+    margin: 0;
+    text-align: center;
+    font-size: $h1-size-24-36;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.description {
+    text-align: center;
+}
+
+.cards-ctn {
+    display: grid;
+    gap: 1.5rem; // Come back for clamp()
+}
+
+.card {
+    background: white;
+    box-shadow: 0px 5px 5px; // Come back to this!
+    padding: 2rem;;
+    border-radius: 8px;
+    display: flex; // Come back for @mixin
+    flex-direction: column;
+    gap: 1rem; // Come back for clamp()
+}
+
+.header.medium {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.icon {
+    width: 56px;
+    height: auto;
+}
+
+#supervisor {
+    @include border-top($primary-cyan);
+}
+
+#team {
+    @include border-top($primary-red);
+}
+
+#karma {
+    @include border-top($primary-orange);
+}
+
+#calculator {
+    @include border-top($primary-blue);
+}

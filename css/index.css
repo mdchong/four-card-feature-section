@@ -74,4 +74,84 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+* {
+  outline: 1px solid red;
+}
+
+*:nth-child(even) {
+  outline: 1px solid green;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  font-size: 0.938rem;
+  color: hsl(234, 12%, 34%);
+  padding: 1.75rem;
+  color: hsl(229, 6%, 66%);
+  min-height: 100svh;
+}
+
+.header.weight-normal {
+  font-weight: 200;
+}
+
+.header {
+  color: hsl(234, 12%, 34%);
+}
+
+.header.big {
+  margin: 0;
+  text-align: center;
+  font-size: clamp(1.5rem, 1.2391rem + 1.3043vw, 2.25rem);
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.description {
+  text-align: center;
+}
+
+.cards-ctn {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  box-shadow: 0px 5px 5px;
+  padding: 2rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header.medium {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.icon {
+  width: 56px;
+  height: auto;
+}
+
+#supervisor {
+  border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+#team {
+  border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+#karma {
+  border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+#calculator {
+  border-top: 4px solid hsl(212, 86%, 64%);
+}
+
 /*# sourceMappingURL=index.css.map */
