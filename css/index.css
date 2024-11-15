@@ -81,6 +81,7 @@ body {
   padding: 1.75rem;
   color: hsl(229, 6%, 66%);
   min-height: 100svh;
+  background: hsl(0, 0%, 98%);
 }
 
 .header-group {
